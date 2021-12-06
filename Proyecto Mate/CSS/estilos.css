@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Sans-serif;
+    font-weight:100;
+}
+
+body{
+    background-image: url(/Imagenes/patagonia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+#header{
+    display: flex;
+    background-color: rgba(2, 64, 13,0.8);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left:0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1; 
+}
+
+#header_home_input, .icon-paragraph-justify{
+    display: none;
+}
+
+#header_home{
+    width: 40%;
+    display:flex;
+}
+
+#home_logo{
+    height: 50px;
+}
+
+#home_h1{
+    align-self: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+#div_header_nav{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header_nav{
+    display: flex;
+}
+
+#nav_ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav_li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1.25em;
+    padding: 5px;
+    border: 3px solid #017918;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nav_li:hover{
+    background-color: #00FF4D;
+    color: #000;
+}
+
+.nav_li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#our_products{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.products{
+    border: 5px solid #000;
+    border-radius: 30px;
+    width: 20%;
+    height: 400px;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    background-color: #fff;
+}
+
+.products_img{
+    height: 350px;
+    width: 100%;
+    background:none;
+    align-self: center;
+}
+
+.products_h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 750;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(9, 86, 36 , 0.75);
+}
+
+.products_h2:hover{
+    justify-content: center;
+    font-size: 40px;
+    top: 40%;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+
+
+#container_logistic_payments{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgba(2, 64, 13,0.8);
+}
+
+.logistic_payments{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+}
+
+.logistic_payments_icon{
+    margin: auto;
+    font-size: 120px;
+}
+
+#container_image_bar{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    margin-top: 100px;  
+}
+
+.image_bar{
+    width: 25%;
+}
+
+#container_image_bar img{
+    height: 450px;
+    width: 100%;
+}
+
+#container_us{
+    border: 1px solid white;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 3px solid  rgba(2, 64, 13);
+    border-radius: 10px;
+    background-color: rgba(2, 64, 13,0.8);
+    
+}   
+
+#us_h2{
+    text-align: center;
+    font-size: 2em; 
+    font-weight: bold;  
+}
+
+#us_p{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-top: 1px solid #000;
+    margin-top: auto;
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(2, 64, 13);
+}
+
+.footer_icon{
+    font-size: 20px;
+    text-align: center;
+    color: #00FF4D;
+}
+
+.footer_h3{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 960px) and (min-width:610px){
+    .footer_icon{
+        font-size: 16px;
+    }
+
+    .footer_h3{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 610px) {
+    body{
+        padding-bottom: 1550px;
+    }
+    #header{
+        background-color: rgba(2, 64, 13,0.8);
+        z-index: 1;
+    }
+    
+    #header_home_input{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top:0px;
+        background-color: rgba(2, 64, 13,0.8) ;  
+        z-index: 10;
+        display: none;  
+    }
+
+    #header_home_input:checked ~ #div_header_nav{
+        transform: translateX(0%);
+        transition: all 1.0s ease-out;
+        background-color: rgba(2, 64, 13);
+        border: 1px solid wheat;
+    }
+
+    .icon-paragraph-justify{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    #header_home{
+        margin: auto;
+    }
+
+    #home_h1{
+        text-align: center;
+    }
+
+    #div_header_nav{
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        margin: 0;
+        transform: translateX(-100%);
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all 0.7s ease-in;
+    }
+
+    #li_1{
+        position: fixed;
+        top: 25%;
+        left: 30%;
+        width: 200px;
+    }
+
+    #li_2{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 200px;  
+    }
+
+    #li_3{
+        position: absolute;
+        top: 75%;
+        left: 30%;
+        width: 200px;
+    }
+
+    #our_products{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .products{
+        margin: auto;
+        width: 50%;
+    }
+
+    #product_2, #product_3, #product_4{
+        margin-top: 50px;
+    }
+
+    #container_image_bar{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .image_bar{
+        margin: auto;
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    #container_us{
+        position: relative;
+        top: 1500px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .footer_info{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 610px) {  /*Segundo Responsive*/
+    body{
+        padding-bottom: 1550px;
+    }
+    #header{
+        background-color: rgba(2, 64, 13,0.8);
+        z-index: 1;
+    }
+
+    #header_home{
+        justify-content: center;
+    }
+    
+    #header_home_input{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top:0px;
+        background-color: rgba(2, 64, 13,0.8) ;  
+        z-index: 10;
+        display: none;  
+    }
+
+    #header_home_input:checked ~ #div_header_nav{
+        transform: translateX(0%);
+        transition: all 1.0s ease-out;
+        background-color: rgba(2, 64, 13);
+        border: 1px solid wheat;
+    }
+
+    .icon-paragraph-justify{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    #header_home{
+        margin: auto;
+    }
+
+    #home_h1{
+        text-align: center;
+    }
+
+    #div_header_nav{
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        margin: 0;
+        transform: translateX(-100%);
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all 0.7s ease-in;
+    }
+
+    #li_1{
+        position: fixed;
+        top: 25%;
+        left: 30%;
+        width: 200px;
+    }
+
+    #li_2{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 200px;  
+    }
+
+    #li_3{
+        position: absolute;
+        top: 75%;
+        left: 30%;
+        width: 200px;
+    }
+
+    #our_products{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .products{
+        margin: auto;
+        width: 300px;
+    }
+
+    #product_2, #product_3, #product_4{
+        margin-top: 50px;
+    }
+
+    #container_image_bar{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .image_bar{
+        margin: auto;
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    #container_us{
+        position: relative;
+        top: 1500px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .footer_info{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:430px ) {
+    .logistic_payments_icon{
+        font-size: 20px;
+    }
+
+    .logistic_payments_h3{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:360px) and (max-width:640px){
+    #container_logistic_payments{
+        position: relative;
+        left: 18px;
+    }
+
+    .footer_info{
+        max-width:all;
+        position: relative;
+        left: 18px;
+    }
+
+    #footer{
+        border-top: transparent;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:320px) and (max-height:568px){
+    #our_products{
+        position: relative;
+        left: 30px;
+    }
+
+    #container_logistic_payments{
+        position: relative;
+        left: 38px;
+    }
+
+    #container_us{
+        position: relative;
+        left: 40px;
+    }
+
+    .footer_info{
+        position: relative;
+        left:38px
+    }
+}
+
+@media screen and (max-width:375px) and (max-height:667px){
+    #container_logistic_payments{
+        position: relative;
+        left: 10px;
+    }
+
+    .footer_info{
+        position: relative;
+        left: 10px;
+    }
+
+    #footer{
+        border-top: transparent;
+    }
+}
+
+@media screen and (max-width:375px) and (max-height:812px){
+    #container_logistic_payments{
+        position: relative;
+        left: 10px;
+    }
+
+    .footer_info{
+        position: relative;
+        left: 12px;
+    }
+
+    #footer{
+        border-top: transparent;
+    }
+}
+
+@media screen and (max-width:280px) and (max-height:653px){
+    .products{
+        position: relative;
+        left: 30px;
+    }
+}
