@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(/Imagenes/patagonia.jpg);
+    background-image: url(./assets/patagonia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
