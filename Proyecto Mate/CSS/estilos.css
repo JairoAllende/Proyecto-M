@@ -12,77 +12,60 @@ body{
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    position: relative;
+    
 }
 
-#header{
+header{
     display: flex;
-    background-color: rgba(2, 64, 13,0.8);
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left:0px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    background-color: rgba(118, 166, 130);
     color: #fff;
-    z-index: 1; 
+    border: 1px solid black;
 }
 
-#header_home_input, .icon-paragraph-justify{
-    display: none;
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    width: 40%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 1.2rem;
+    
+}
+
+li{
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 15px;
 }
 
 #header_home{
-    width: 40%;
-    display:flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 18%;
+    border: 1px solid black;
 }
 
-#home_logo{
-    height: 50px;
+#a_logo{
+    width: 32%;
 }
 
-#home_h1{
-    align-self: center;
-    line-height: 50px;
-    text-decoration: none;
-    color: inherit;
+
+#header_img{
     width: 100%;
 }
 
-#div_header_nav{
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-}
 
-#header_nav{
-    display: flex;
-}
-
-#nav_ul{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-.nav_li{
-    list-style: none;
-    margin-right: 20px;
-    font-size: 1.25em;
-    padding: 5px;
-    border: 3px solid #017918;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.nav_li:hover{
-    background-color: #00FF4D;
-    color: #000;
-}
-
-.nav_li a{
-    text-decoration: none;
-    color: inherit;
-}
 
 #our_products{
     margin-top: 100px;
