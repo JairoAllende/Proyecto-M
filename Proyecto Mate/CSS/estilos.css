@@ -18,9 +18,8 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(118, 166, 130);
     color: #fff;
-    border: 1px solid black;
+    background: linear-gradient(to bottom,rgba(94, 127, 102) , rgba(128, 179, 111,0.9));
 }
 
 a{
@@ -46,72 +45,53 @@ li{
     padding: 0.5rem;
     border: 1px solid #000;
     border-radius: 15px;
+    cursor: pointer;
 }
+
+li:hover{
+    background-color: #000;
+}
+
 
 #header_home{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 18%;
-    border: 1px solid black;
 }
 
 #a_logo{
     width: 32%;
 }
 
-
 #header_img{
     width: 100%;
 }
 
-
-
-#our_products{
-    margin-top: 100px;
+#products{
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-}
-
-.products{
-    border: 5px solid #000;
-    border-radius: 30px;
-    width: 20%;
-    height: 400px;
-    margin-left: 20px;
-    position: relative;
-    display: flex;
-    background-color: #fff;
-}
-
-.products_img{
-    height: 350px;
-    width: 100%;
-    background:none;
-    align-self: center;
-}
-
-.products_h2{
-    position: absolute;
-    top: 50%;
-    width: 100%;
+    align-items: center;
+    min-height: 550px;
     text-align: center;
-    font-size: 20px;
-    font-weight: 750;
-    color: #fff;
-    text-decoration: none;
-    background-color: rgba(9, 86, 36 , 0.75);
 }
 
-.products_h2:hover{
-    justify-content: center;
-    font-size: 40px;
-    top: 40%;
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
+.imgs{
+    height: 45vh;
+    border-radius: 20px;
+    transition: 1s;
 }
 
+.imgs:hover{
+    height: 47vh;
+    transition: 1s;
+}
+
+.product_h2{
+    color: #9FE388;
+    font-size: 2rem;
+    bottom: 50%;
+}
 
 
 #container_logistic_payments{
@@ -120,7 +100,7 @@ li{
     display: flex;
     justify-content: space-around;
     height: 80px;
-    background-color: rgba(2, 64, 13,0.8);
+    background-color: rgba(128, 179, 111,0.9);
 }
 
 .logistic_payments{
@@ -150,6 +130,18 @@ li{
 #container_image_bar img{
     height: 450px;
     width: 100%;
+}
+
+#galery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border : 1px solid wheat;
+    width: 100%;
+}
+
+.galery_img{
+    width: 20%;
 }
 
 #container_us{
