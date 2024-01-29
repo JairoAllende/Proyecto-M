@@ -144,23 +144,31 @@ ul{
     height: 500px;
 }
 
+
 footer{
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: black;
+}
+
+#footerLine{
+    content: " ";
+    background-color: white;
+    height: 4px;
+    position: relative;
+    bottom: 0;
+    width: 85%;
+    margin: auto;
+}
+
+#footer_content{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#transitionBorder{
-    position: relative;
-    
-    height: 10px;
-    width: 70%;
-    background: white;
-}
-
-footer > img{
+#footerImg{
     width: 10%;
 }
 
@@ -169,16 +177,27 @@ footer > img{
     flex-direction: column;
     text-align: center;
     width: 30%;
-    gap: 10px;
+    gap: 20px;
 }
 
 #paymedias{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .paymedia{
     width: 100px;
+}
+
+#container_contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 5px;
+}
+
+#container_contacts > h2{
+    padding-bottom: 10px;
 }
