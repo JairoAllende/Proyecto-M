@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    font-family:'Bitter', serif;
+    font-weight: 300;
 }
 
 body{
@@ -28,12 +30,18 @@ ul{
     padding: 0;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 
 #home{
     margin-left: 10%;
     font-size: 1.8rem;
     display: flex;
     align-items: center;
+    
 }
 
 #marca{
@@ -51,6 +59,24 @@ ul{
     align-items: center;
     height: 100%;
     font-size: 2rem;
+    
+}
+
+.header_icon{
+    transition: 0.3s;
+
+}
+
+.header_icon:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 3rem;
+}
+
+#products{
+    padding-top: 0.5rem;
+    width: 34%;
+    margin: auto;
 }
 
 #ul_products{
@@ -59,13 +85,21 @@ ul{
     gap: 1rem;
     font-size: 1.3rem;
     color: white;
+    
 }
 
-#products{
-    padding-top: 1rem;
+.li_products{
+    transition: 0.3s;
+}
+
+.li_products:hover{
+    transition: 0.3s;
+    transform: translateY(-20%);
+    cursor: pointer;
 }
 
 #mainContainer{
+    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,13 +114,26 @@ ul{
     padding: 2rem;
     text-align: center;
     font-size: 2rem;
+    
 }
 
-#social > ul{
+.social_ul{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
+
+
+.social_li{
+    transition: 0.3s;
+}
+
+.social_li:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(-20%);
+}
+    
 
 #welcomeText{
     display: flex;
@@ -121,7 +168,7 @@ ul{
     flex-direction: column;
     text-align: center;
     width: 20%;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 #container_products{
@@ -142,6 +189,22 @@ ul{
     background-size: cover;
     background-position: center;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+}
+
+.texto > h2{
+    padding: 5px;
 }
 
 
