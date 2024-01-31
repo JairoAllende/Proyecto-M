@@ -21,7 +21,6 @@ header{
     display: flex;
     justify-content: space-between;
     color: white;
-    min-height: 10vh;
 }
 
 ul{
@@ -35,17 +34,18 @@ a{
     text-decoration: none;
 }
 
-
-#home{
+#container_home{
     margin-left: 10%;
-    font-size: 1.8rem;
     display: flex;
     align-items: center;
-    
 }
 
-#marca{
-    width: 20%;
+#img_home{
+    width: 200px;
+}
+
+#h1_home{
+    font-size: 2.5rem;
 }
 
 #container_ul{
@@ -74,7 +74,7 @@ a{
 }
 
 #products{
-    padding-top: 0.5rem;
+    
     width: 34%;
     margin: auto;
 }
@@ -152,7 +152,7 @@ a{
     position: relative;
     bottom: 0px;
     width: 100%;
-    height: 80px;
+    height: 55px;
     background: linear-gradient(transparent, black);
 }
 
@@ -163,19 +163,20 @@ a{
     background: black;
 }
 
+#container_products{
+    padding: 2.5rem 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
 .payments{
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 20%;
     font-size: 1.8rem;
-}
-
-#container_products{
-    padding: 3rem 0;
-    background-color: black;
-    display: flex;
-    justify-content: center;
+    padding: 2rem 0;
 }
 
 .containerCards{
@@ -232,7 +233,7 @@ footer{
 }
 
 #footerImg{
-    width: 10%;
+    width: 200px;
 }
 
 #container_paymedias{
