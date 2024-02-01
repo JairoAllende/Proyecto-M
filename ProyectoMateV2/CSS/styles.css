@@ -193,7 +193,17 @@ a{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
+    opacity:0.85;
+    transition: 1s;
+}
+
+.cards:hover{
+    opacity: 1;
+    cursor: pointer;
+    height: 510px;
+    width: 430px;
+    box-sizing: inherit;
+    transition: 1s;
 }
 
 .texto{
@@ -264,4 +274,8 @@ footer{
 
 #container_contacts > h2{
     padding-bottom: 10px;
+}
+
+@media screen and (max-width:300px) {
+
 }
