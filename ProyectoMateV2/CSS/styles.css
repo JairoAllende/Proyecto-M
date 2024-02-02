@@ -40,6 +40,10 @@ a{
     align-items: center;
 }
 
+#a_img_home{
+    height: 200px;
+}
+
 #img_home{
     width: 200px;
 }
@@ -73,8 +77,12 @@ a{
     font-size: 3rem;
 }
 
-#products{
-    
+.open_menu,
+.close_menu{
+    display: none;
+}
+
+.products{
     width: 34%;
     margin: auto;
 }
@@ -99,7 +107,6 @@ a{
 }
 
 #mainContainer{
-    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -277,5 +284,136 @@ footer{
 }
 
 @media screen and (max-width:300px) {
+    body{
+        background-position: center;
+    }
 
+    header{
+        justify-content: space-between;
+        padding: 0.3rem
+    }
+
+    #open{
+        align-self: flex-start;
+        margin-top: 2rem;
+    }
+    
+    #container_home{
+        margin-left: 0%;
+        align-items: center;
+    }
+    
+    #a_img_home,#img_home{
+        height: 150px;
+        width: 150px;
+    }
+
+    #a_h1_home,#h1_home{
+        display: none;
+    }
+
+    #container_ul{
+        display: none;
+    }
+
+    .open_menu,
+    .close_menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    }
+
+    #mainContainer{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .social_li{
+        padding: 0 2rem;
+    }
+
+    #welcomeText{
+        font-size: 0.8rem;
+        margin: 0;
+        width: 100%;
+        padding: 1rem;
+        height: 60%;
+    }
+
+    #p_welcomeText{
+        align-self: self-start ;
+    }
+
+    .products{
+        opacity: 0;
+        visibility: hidden;
+        
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 2.8rem;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .products.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #ul_products{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payments{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 40%;
+        padding: 1rem;
+    }
+
+    .containerCards{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .cards:hover{
+        opacity: 1;
+        cursor: pointer;
+        height: 510px;
+        width: 100%;
+        transition: 1s;
+    }
+
+    #footer_content{
+        flex-direction: column;
+    }
+
+    #container_paymedias{
+        
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    #paymedias{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #container_contacts{
+        margin: 3rem 0;
+        display: flex;
+        text-align: center;
+        gap: 5px;
+    }
 }
