@@ -7,13 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>MateMáticos</title>
 </head>
 <body>
-    <header>
+    <header id="header">
+        <button class="open_menu" id="open"><i class="bi bi-list"></i></button>
         <div id="container_home">
-            <a href="./index.html"><img id="img_home" src="./CSS/ASSETS/Marca.png" alt="marca"></a>
-            <a href="/index.html"><h1 id="h1_home">MateMáticos</h1></a>
+            <a href="./index.html" id="a_img_home"><img id="img_home" src="./CSS/ASSETS/Marca.png" alt="marca"></a>
+            <a href="/index.html" id="a_h1_home"><h1 id="h1_home">MateMáticos</h1></a>
         </div>
         <div id="container_ul">
             <ul id="header_ul">
@@ -23,8 +25,10 @@
         </div>
     </header>
     
-    <nav id="products">
+    
+    <nav id="nav" class="products">
         <ul id="ul_products">
+            <button class="close_menu" id="close"><i class="bi bi-x"></i></button>
             <li class="li_products">Mates</li>
             <li class="li_products">Yerbas</li>
             <li class="li_products">Termos</li>
@@ -47,7 +51,7 @@
             </ul>
         </div>
         <div id="welcomeText">
-            <p>Bienvenido a MateMáticos: Tu Destino para el Placer del Mate
+            <p id="p_welcomeText">Bienvenido a MateMáticos: Tu Destino para el Placer del Mate
                 <br>
                 <br>    
                 En MateMáticos, explorarás un mundo de mate auténtico. Desde mates artesanales hasta mezclas exquisitas, cada producto ha sido seleccionado para brindarte una experiencia única. Descubre accesorios elegantes, mezclas de yerba de calidad y sumérgete en la rica tradición del mate. En MateMáticos, cada sorbo es una celebración. 
@@ -122,7 +126,6 @@
                     <img class="paymedia" src="./CSS/ASSETS/Paypal.png" alt="Paypal">
                     <img class="paymedia"src="./CSS/ASSETS/MercadoPago.png" alt="MercadoPago">
                 </div>
-
             </div>
             <div id="container_contacts">
                     <h2>Contactanos</h2>
@@ -135,6 +138,8 @@
         
     </footer>
     
+
+    <script src="./JS/main.js"></script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
