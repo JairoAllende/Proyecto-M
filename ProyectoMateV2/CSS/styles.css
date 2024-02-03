@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/CSS/ASSETS/wallpaper.jpg);
+    background-image: url(./ASSETS/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
