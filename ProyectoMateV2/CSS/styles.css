@@ -21,6 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     color: white;
+    padding: 0 10%;
 }
 
 ul{
@@ -35,7 +36,6 @@ a{
 }
 
 #container_home{
-    margin-left: 10%;
     display: flex;
     align-items: center;
 }
@@ -52,18 +52,13 @@ a{
     font-size: 2.5rem;
 }
 
-#container_ul{
-    width: 8%;
-    margin-right: 10%;
-}
-
 #header_ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     font-size: 2rem;
-    
+    gap: 1rem;
 }
 
 .header_icon{
@@ -82,15 +77,11 @@ a{
     display: none;
 }
 
-.products{
-    width: 34%;
-    margin: auto;
-}
 
 #ul_products{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     font-size: 1.3rem;
     color: white;
     
@@ -111,12 +102,13 @@ a{
     align-items: center;
     justify-content: space-around;
     height: 70vh;
+    flex-wrap: wrap;
 }
 
 #social{
     display: flex;
     justify-content: space-evenly;
-    width: 15%;
+    width: 20%;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -148,7 +140,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem;
-    width: 30%;
+    width: 40%;
     color: white;
     text-align: center;
     font-size: 1.4rem;
@@ -208,8 +200,6 @@ a{
     opacity: 1;
     cursor: pointer;
     height: 510px;
-    width: 430px;
-    box-sizing: inherit;
     transition: 1s;
 }
 
@@ -283,7 +273,7 @@ footer{
     padding-bottom: 10px;
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:600px) {
     body{
         background-position: center;
     }
@@ -398,7 +388,6 @@ footer{
     }
 
     #container_paymedias{
-        
         display: flex;
         text-align: center;
         width: 100%;
@@ -415,5 +404,86 @@ footer{
         display: flex;
         text-align: center;
         gap: 5px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px){
+    body{
+        background-position: center;
+    }
+
+    header{
+        padding: 0 2rem 0 0;
+    }
+    
+    #header_ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+
+
+    #ul_products{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        font-size: 1rem;
+        color: white;
+        
+    }
+    
+    #mainContainer{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .social_li{
+        padding: 0 2rem;
+    }
+    
+    
+    #welcomeText{
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+        padding: 2rem;
+        height: 70%;
+    }
+
+    .payments{
+        font-size: 1rem;
+        text-align: center;
+        width: 40%;
+        padding: 1rem;
+    }
+
+    .containerCards{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .cards:hover{
+        opacity: 1;
+        cursor: pointer;
+        height: 510px;
+        width: 100%;
+        transition: 1s;
+    }
+
+
+    #footer_content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #container_contacts{
+        margin: 1rem 0 ;
+        display: flex;
+        text-align: center;
+        gap: 5px;
+        font-size: 1rem;
     }
 }
