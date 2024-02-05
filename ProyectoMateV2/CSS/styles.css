@@ -83,8 +83,11 @@ a{
     justify-content: center;
     gap: 3rem;
     font-size: 1.3rem;
-    color: white;
-    
+    color: white; 
+}
+
+#nav_icons{
+    display: none;
 }
 
 .li_products{
@@ -273,6 +276,14 @@ footer{
     padding-bottom: 10px;
 }
 
+
+@media screen and (max-width:425px){
+    #a_h1_home,#h1_home{
+        display: none;
+    }
+
+}
+
 @media screen and (max-width:600px) {
     body{
         background-position: center;
@@ -284,13 +295,14 @@ footer{
     }
 
     #open{
-        align-self: flex-start;
-        margin-top: 2rem;
+        display: flex;
+        align-items: center;
     }
     
     #container_home{
         margin-left: 0%;
         align-items: center;
+        flex-direction: row-reverse;
     }
     
     #a_img_home,#img_home{
@@ -299,7 +311,7 @@ footer{
     }
 
     #a_h1_home,#h1_home{
-        display: none;
+        font-size: 1.5rem;
     }
 
     #container_ul{
@@ -348,9 +360,11 @@ footer{
         bottom: 0;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.85);
-        padding: 2.8rem;
+        padding: 4.1rem 2.8rem;
         width: 100%;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .products.visible{
@@ -361,6 +375,27 @@ footer{
     #ul_products{
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    #nav_icons{
+        display: block;
+    }
+
+    #ul_icon{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hamburger_icon{
+        color: white;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .hamburger_icon:hover{
+        transition: 1s;
+        transform: translateY(-20%);
     }
 
     .payments{
