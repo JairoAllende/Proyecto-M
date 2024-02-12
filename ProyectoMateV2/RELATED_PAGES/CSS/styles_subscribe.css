@@ -42,9 +42,10 @@ a{
 
 #mail_box{
     width: 60%;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.90);
     position: relative;
@@ -112,7 +113,7 @@ a{
 }
 
 #marca{
-    width: 200px;
+    width: 150px;
     cursor: pointer;
 }
 
@@ -121,8 +122,8 @@ a{
     align-items: center;
     height: 100%;
     gap: 2rem;
-    font-size: 2rem;
-    
+    font-size: 1.5rem;
+   padding: 1rem; 
 }
 
 .social{
@@ -191,6 +192,8 @@ a{
     .input{
         width: 90%;
     }
+
+    
 
     .social{
         font-size: 1.5rem;
